@@ -1,0 +1,264 @@
+/* Flipkart overall design */
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body design */
+body {
+    background-color: #f0f2f5;
+    color: #82868e;
+    font-size: 12px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: white;
+    height: 68px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.navlogo {
+    margin-left: -20px;
+    height: 40px;
+    width: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navsearch {
+    margin-left: -20px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: #f1f3f6;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 755px;
+}
+
+.navsearch i {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    cursor: pointer;
+    color: #82868e;
+}
+
+.navsearch-input {
+    margin-left: -12px;
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.navlogin, .navcart, .navseller {
+    display: flex;
+    font-size: 16px;
+    color: black;
+    align-items: center;
+}
+
+.navlogin i, .navcart i, .navseller i {
+    margin-right: 12px;
+    font-size: 20px;
+    color: black;
+}
+
+.login i {
+    margin-left: 14px;
+    font-size: 10px;
+    transition: transform 0.3s;
+}
+
+.login i:hover {
+    transform: rotate(180deg);
+}
+
+.tripledot i {
+    font-size: 18px;
+    color: black;
+}
+
+/* Section 1: Categories */
+.section-1 {
+    width: 100%;
+    height: 122px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+
+.section-1-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-1-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.navsearch:hover, .navlogin:hover, .navcart:hover, .navseller:hover, .tripledot:hover, .section-1-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sale Banner */
+.sale-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #473b3b34;
+    color: rgb(15, 14, 14);
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sale-banner h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#timer span {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sale-banner p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#timer span:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Section 2: Banner Image */
+.section-2-container {
+    margin-top: 16px;
+    height: 200px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main Section */
+.main_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.main_section_left {
+    width: 80%;
+    height: 350px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 5px;
+}
+
+.main_section_heading {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2 {
+    color: rgb(21, 21, 21);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.boxes_of_big_length_box {
+    display: flex;
+}
+
+.big_length_blocks {
+    width: 150px;
+    height: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.big_length_blocks p {
+    margin-top: 30px;
+    color: black;
+    font-size: 13px;
+}
+
+.big_lenght_blocks_content {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: #cdd1d8 0.5px solid;
+}
+
+.big_lenght_blocks_content p {
+    margin-left: 20px;
+}
+
+.big_block_images {
+    height: 150px;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.big_block_images:hover {
+    transform: scale(1.1);
+}
+
+h6 {
+    margin-left: 30px;
+    color: rgb(8, 6, 6);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.main_section_heading p {
+    margin-left: 30px;
+    font-size: 15px;
+    color: #0e0e0e;
+}
